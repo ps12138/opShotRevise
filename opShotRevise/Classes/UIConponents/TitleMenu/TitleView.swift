@@ -60,10 +60,10 @@ class TitleView: UIView {
                 indicator.backgroundColor = SecondaryColor
                 indicator.alpha = 0.95
                 indicator.autoSetDimension(.height, toSize: 4.0)
-                widthConstraint = indicator.autoSetDimension(.width, toSize: 46.0)
+                widthConstraint = indicator.autoSetDimension(.width, toSize: 40.0)
                 //                indicator.layer.cornerRadius = 2.0
                 //                indicator.clipsToBounds = true
-                indicator.autoPinEdge(toSuperviewEdge: .bottom, withInset: 0)
+                indicator.autoPinEdge(toSuperviewEdge: .bottom, withInset: 5)
                 constraint = indicator.autoAlignAxis(.vertical, toSameAxisOf: button)
             }
             

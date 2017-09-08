@@ -11,7 +11,12 @@ import Foundation
 enum FeedContentType: Int {
     case recent
     case popular
-    case mostComment
+    case animated
+    case teams
+    case debuts
+    case followed
+    case liked
+    case buckets
     
     var title: String {
         switch self {
@@ -19,8 +24,18 @@ enum FeedContentType: Int {
             return "Recent"
         case .popular:
             return "Popular"
-        case .mostComment:
-            return "Most Comment"
+        case .animated:
+            return "Animated"
+        case .teams:
+            return "Teams"
+        case .debuts:
+            return "Debuts"
+        case .followed:
+            return "Followed"
+        case .liked:
+            return "Liked"
+        case .buckets:
+            return "Buckets"
         }
     }
 }

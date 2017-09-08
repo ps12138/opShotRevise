@@ -38,14 +38,20 @@ fileprivate extension Utilities {
         
         let recentHomeVC = HomeViewController(type: .recent)
         let popularHomeVC = HomeViewController(type: .popular)
-        let mostCommentHomeVC = HomeViewController(type: .mostComment)
-        let MenuHomeVC = TitleMenuViewController(childVC: [recentHomeVC, popularHomeVC, mostCommentHomeVC])
-        let homeNav = MainNavigationController(rootViewController: MenuHomeVC)
+        let animatedHomeVC = HomeViewController(type: .animated)
+        let debutsHomeVC = HomeViewController(type: .debuts)
+        let teamsHomeVC = HomeViewController(type: .teams)
         
-        let exploreVC = HomeViewController(type: .recent)
-        let exploreNav = MainNavigationController(rootViewController: exploreVC)
+        let menuHomeVC = TitleMenuViewController(childVC: [recentHomeVC, popularHomeVC, animatedHomeVC, debutsHomeVC, teamsHomeVC])
+        let homeNav = MainNavigationController(rootViewController: menuHomeVC)
         
-        let profileVC = HomeViewController(type: .mostComment)
+        let followedExploreVC = HomeViewController(type: .followed)
+        let likedExploreVC = HomeViewController(type: .liked)
+        let bucketsExploreVC = HomeViewController(type: .buckets)
+        let menuExploreVC = TitleMenuViewController(childVC: [followedExploreVC, likedExploreVC, bucketsExploreVC])
+        let exploreNav = MainNavigationController(rootViewController: menuExploreVC)
+        
+        let profileVC = ProfileViewController(title: "Profile")
         let profileNav = MainNavigationController(rootViewController: profileVC)
         
         homeNav.tabBarItem = ESTabBarItem(
