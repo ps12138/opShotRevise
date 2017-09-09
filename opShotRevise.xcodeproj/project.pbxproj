@@ -37,6 +37,7 @@
 		10299D0B1F613482007CD17F /* CHTCollectionViewWaterfallLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299D0A1F613482007CD17F /* CHTCollectionViewWaterfallLayout.swift */; };
 		10299D0D1F613D06007CD17F /* UIFont+predefine.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299D0C1F613D06007CD17F /* UIFont+predefine.swift */; };
 		10299E831F6216BA007CD17F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299E821F6216BA007CD17F /* ProfileViewController.swift */; };
+		10299EA11F64B4A5007CD17F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299EA01F64B4A5007CD17F /* ProfileViewController.swift */; };
 		7DE6A4C400D453507308D7D7 /* Pods_opShotRevise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CA38517D6E9DC37DFAC438 /* Pods_opShotRevise.framework */; };
 /* End PBXBuildFile section */
 
@@ -94,6 +95,7 @@
 		10299D0A1F613482007CD17F /* CHTCollectionViewWaterfallLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CHTCollectionViewWaterfallLayout.swift; sourceTree = "<group>"; };
 		10299D0C1F613D06007CD17F /* UIFont+predefine.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIFont+predefine.swift"; sourceTree = "<group>"; };
 		10299E821F6216BA007CD17F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
+		10299EA01F64B4A5007CD17F /* ProfileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProfileViewController.swift; sourceTree = "<group>"; };
 		37A254E15086D6EE3342D61A /* Pods-opShotRevise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opShotRevise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opShotRevise/Pods-opShotRevise.debug.xcconfig"; sourceTree = "<group>"; };
 		95923C7B54D8440CC6A7151E /* Pods-opShotRevise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opShotRevise.release.xcconfig"; path = "Pods/Target Support Files/Pods-opShotRevise/Pods-opShotRevise.release.xcconfig"; sourceTree = "<group>"; };
 		C7CA38517D6E9DC37DFAC438 /* Pods_opShotRevise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opShotRevise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -366,6 +368,7 @@
 		10299D141F61F494007CD17F /* ViewController */ = {
 			isa = PBXGroup;
 			children = (
+				10299EA01F64B4A5007CD17F /* ProfileViewController.swift */,
 			);
 			path = ViewController;
 			sourceTree = "<group>";
@@ -592,6 +595,7 @@
 				10299CF81F60D904007CD17F /* TitleView.swift in Sources */,
 				10299CE81F60D194007CD17F /* MainTabBarController.swift in Sources */,
 				10299D061F6131D2007CD17F /* NibReusable.swift in Sources */,
+				10299EA11F64B4A5007CD17F /* ProfileViewController.swift in Sources */,
 				10299CF01F60D6B7007CD17F /* Common.swift in Sources */,
 				10299CE31F60CF37007CD17F /* ShotImage.swift in Sources */,
 				10299CD81F60CEAF007CD17F /* HomeViewController.swift in Sources */,
