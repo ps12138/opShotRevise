@@ -1,0 +1,60 @@
+PODS:
+  - Alamofire (4.5.0)
+  - ESTabBarController-swift (2.5)
+  - FLAnimatedImage (1.0.12)
+  - Fusuma (1.2.0)
+  - MJRefresh (3.1.12)
+  - NYTPhotoViewer (1.2.0):
+    - NYTPhotoViewer/AnimatedGifSupport (= 1.2.0)
+    - NYTPhotoViewer/Core (= 1.2.0)
+  - NYTPhotoViewer/AnimatedGifSupport (1.2.0):
+    - FLAnimatedImage (~> 1.0.12)
+    - NYTPhotoViewer/Core
+  - NYTPhotoViewer/Core (1.2.0)
+  - ObjectMapper (2.2.8)
+  - PureLayout (3.0.2)
+  - SDWebImage (4.1.0):
+    - SDWebImage/Core (= 4.1.0)
+  - SDWebImage/Core (4.1.0)
+  - SVProgressHUD (2.1.2)
+  - XLActionController (3.0.1):
+    - XLActionController/Core (= 3.0.1)
+  - XLActionController/Core (3.0.1)
+  - XLActionController/Periscope (3.0.1):
+    - XLActionController/Core
+  - XLActionController/Twitter (3.0.1):
+    - XLActionController/Core
+  - XLActionController/Youtube (3.0.1):
+    - XLActionController/Core
+
+DEPENDENCIES:
+  - Alamofire
+  - ESTabBarController-swift
+  - Fusuma
+  - MJRefresh
+  - NYTPhotoViewer
+  - ObjectMapper
+  - PureLayout
+  - SDWebImage
+  - SVProgressHUD
+  - XLActionController
+  - XLActionController/Periscope
+  - XLActionController/Twitter
+  - XLActionController/Youtube
+
+SPEC CHECKSUMS:
+  Alamofire: f28cdffd29de33a7bfa022cbd63ae95a27fae140
+  ESTabBarController-swift: 8daa432f2a9be8ebd25101dc46c84472fd760512
+  FLAnimatedImage: 4a0b56255d9b05f18b6dd7ee06871be5d3b89e31
+  Fusuma: e8158ad6650507455c9898c22bc01583fbc86d8e
+  MJRefresh: b96cdb21c4aa75a7b07654311ab2f315c497e806
+  NYTPhotoViewer: 323217e4590a1586eb3c9674b3fefb0fb8b57896
+  ObjectMapper: 3d571bb5af471c779e1160828cd9ad5c4ef90958
+  PureLayout: 4d550abe49a94f24c2808b9b95db9131685fe4cd
+  SDWebImage: 0e435c14e402a6730315a0fb79f95e68654d55a4
+  SVProgressHUD: c404a55d78acbeb7ebb78b76d3faf986475a6994
+  XLActionController: 57fe0ce1642e2eed971b188b490762345fdbf963
+
+PODFILE CHECKSUM: 735c8909b5f70999975ffdc6329bf73e9e11b688
+
+COCOAPODS: 1.2.0
