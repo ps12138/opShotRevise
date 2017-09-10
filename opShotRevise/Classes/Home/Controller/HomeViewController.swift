@@ -22,6 +22,7 @@ class HomeViewController: UIViewController {
     // MARK: - Properties
     fileprivate var contentType: FeedContentType = .recent
     fileprivate var feedManager = FeedShotsManager()
+    fileprivate var isFirstApeared: Bool = true
     
     // MARK: - Life cycle
     override init(nibName nibNameOrNil: String?, bundle nibBundleOrNil: Bundle?) {
@@ -45,6 +46,14 @@ class HomeViewController: UIViewController {
         prepareCollectionView()
         prepareRefresh()
         mock()
+    }
+    
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        if isFirstApeared {
+            isFirstApeared = false
+            self.collectionView?.mj_header.beginRefreshing()
+        }
     }
     
     func mock() {
@@ -117,7 +126,6 @@ fileprivate extension Utilities {
         header?.isAutomaticallyChangeAlpha = true
         header?.lastUpdatedTimeLabel.isEnabled = true
         header?.stateLabel.isHidden = true
-        header?.beginRefreshing()
         self.collectionView?.mj_header = header
         
         let footer = MJRefreshAutoNormalFooter(refreshingTarget: self, refreshingAction: #selector(self.loadMoreShots))

@@ -77,10 +77,18 @@ extension TitleMenuViewController: UIScrollViewDelegate {
     }
     
     func scrollViewDidEndScrollingAnimation(_ scrollView: UIScrollView) {
+        let countOfVC = self.childViewControllers.count
         let index = (Int)(scrollView.contentOffset.x/scrollView.bounds.size.width)
+        
         let vc = self.childViewControllers[index]
         vc.view.frame.origin.x = scrollView.contentOffset.x
         scrollView.addSubview(vc.view)
+        
+        if index + 1 < countOfVC {
+            let nextVC = self.childViewControllers[index+1]
+            nextVC.view.frame.origin.x = scrollView.contentOffset.x + scrollView.bounds.size.width
+            scrollView.addSubview(nextVC.view)
+        }
     }
     
     func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {

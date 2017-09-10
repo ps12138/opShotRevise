@@ -45,27 +45,27 @@
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="255" textAlignment="justified" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DCh-pZ-yvV">
-                        <rect key="frame" x="10" y="180.5" width="184" height="54"/>
-                        <mutableString key="text">Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.</mutableString>
+                        <rect key="frame" x="10" y="180.5" width="184" height="45"/>
+                        <string key="text">Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.Hello, Dribbble! The space is life, space is love. This is the reason I was dreaming about doing something for NASA for a long time.</string>
                         <fontDescription key="fontDescription" type="system" pointSize="13"/>
                         <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="calibratedWhite"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="u41-mj-WYa">
-                        <rect key="frame" x="5" y="240" width="32" height="32"/>
+                        <rect key="frame" x="5" y="231" width="30" height="30"/>
                         <constraints>
                             <constraint firstAttribute="width" secondItem="u41-mj-WYa" secondAttribute="height" multiplier="1:1" id="57o-a8-Cjb"/>
-                            <constraint firstAttribute="width" constant="32" id="Rys-mz-Kvu"/>
+                            <constraint firstAttribute="width" constant="30" id="Rys-mz-Kvu"/>
                         </constraints>
                     </imageView>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="252" verticalHuggingPriority="251" horizontalCompressionResistancePriority="753" text="Dan Cederholm" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="nEa-Pw-obZ">
-                        <rect key="frame" x="47" y="240" width="152" height="17"/>
+                        <rect key="frame" x="45" y="231" width="154" height="17"/>
                         <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="12"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
                     </label>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="📍New York" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="C1M-wQ-w02">
-                        <rect key="frame" x="45" y="257" width="154" height="12"/>
+                        <rect key="frame" x="43" y="248" width="156" height="12"/>
                         <fontDescription key="fontDescription" name="PingFangSC-Regular" family="PingFang SC" pointSize="8"/>
                         <nil key="textColor"/>
                         <nil key="highlightedColor"/>
@@ -91,7 +91,7 @@
                 <constraint firstAttribute="trailing" secondItem="nhr-Bo-zoO" secondAttribute="trailing" constant="5" id="mCq-DU-vGL"/>
                 <constraint firstItem="u41-mj-WYa" firstAttribute="leading" secondItem="nhr-Bo-zoO" secondAttribute="leading" id="mZE-xK-QCQ"/>
                 <constraint firstItem="DCh-pZ-yvV" firstAttribute="trailing" secondItem="pUG-s4-nj6" secondAttribute="trailing" id="q69-ZP-28O"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u41-mj-WYa" secondAttribute="bottom" constant="5" id="rLo-eI-2PH"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="u41-mj-WYa" secondAttribute="bottom" constant="16" id="rLo-eI-2PH"/>
                 <constraint firstItem="nEa-Pw-obZ" firstAttribute="trailing" secondItem="nhr-Bo-zoO" secondAttribute="trailing" id="thu-d9-UYj"/>
                 <constraint firstAttribute="trailing" secondItem="s9m-hb-WKS" secondAttribute="trailing" constant="15" id="xGM-mz-I5y"/>
             </constraints>

@@ -39,10 +39,10 @@ fileprivate extension Utilities {
         let recentHomeVC = HomeViewController(type: .recent)
         let popularHomeVC = HomeViewController(type: .popular)
         let animatedHomeVC = HomeViewController(type: .animated)
-        let debutsHomeVC = HomeViewController(type: .debuts)
+        //let debutsHomeVC = HomeViewController(type: .debuts)
         let teamsHomeVC = HomeViewController(type: .teams)
         
-        let menuHomeVC = TitleMenuViewController(childVC: [recentHomeVC, popularHomeVC, animatedHomeVC, debutsHomeVC, teamsHomeVC])
+        let menuHomeVC = TitleMenuViewController(childVC: [recentHomeVC, popularHomeVC, animatedHomeVC, teamsHomeVC])
         let homeNav = MainNavigationController(rootViewController: menuHomeVC)
         
         let followedExploreVC = HomeViewController(type: .followed)

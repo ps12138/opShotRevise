@@ -19,6 +19,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         window = UIWindow(frame: UIScreen.main.bounds)
         window?.rootViewController = MainTabBarController()
         window?.makeKeyAndVisible()
+        sleep(1)
         return true
     }
 
