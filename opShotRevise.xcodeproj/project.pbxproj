@@ -40,6 +40,7 @@
 		10299EBA1F64B670007CD17F /* CurrentUserProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299EB71F64B670007CD17F /* CurrentUserProfileViewController.swift */; };
 		10299EBB1F64B670007CD17F /* ProfileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299EB81F64B670007CD17F /* ProfileViewController.swift */; };
 		7DE6A4C400D453507308D7D7 /* Pods_opShotRevise.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C7CA38517D6E9DC37DFAC438 /* Pods_opShotRevise.framework */; };
+		D516DC451F64C64C0038A926 /* test.swift in Sources */ = {isa = PBXBuildFile; fileRef = D516DC441F64C64C0038A926 /* test.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -101,6 +102,7 @@
 		37A254E15086D6EE3342D61A /* Pods-opShotRevise.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opShotRevise.debug.xcconfig"; path = "Pods/Target Support Files/Pods-opShotRevise/Pods-opShotRevise.debug.xcconfig"; sourceTree = "<group>"; };
 		95923C7B54D8440CC6A7151E /* Pods-opShotRevise.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-opShotRevise.release.xcconfig"; path = "Pods/Target Support Files/Pods-opShotRevise/Pods-opShotRevise.release.xcconfig"; sourceTree = "<group>"; };
 		C7CA38517D6E9DC37DFAC438 /* Pods_opShotRevise.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_opShotRevise.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D516DC441F64C64C0038A926 /* test.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = test.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -253,6 +255,7 @@
 		10299CD21F60CE78007CD17F /* View */ = {
 			isa = PBXGroup;
 			children = (
+				D516DC441F64C64C0038A926 /* test.swift */,
 				10299D0A1F613482007CD17F /* CHTCollectionViewWaterfallLayout.swift */,
 				10299CD91F60CEF6007CD17F /* HomeCollectionViewCell.swift */,
 				10299CDA1F60CEF6007CD17F /* HomeCollectionViewCell.xib */,
@@ -563,7 +566,7 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "diff \"${PODS_ROOT}/../Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
 			showEnvVarsInLog = 0;
 		};
 		5B342D35977AD396CCAEB889 /* [CP] Embed Pods Frameworks */ = {
@@ -601,6 +604,7 @@
 				10299D061F6131D2007CD17F /* NibReusable.swift in Sources */,
 				10299CF01F60D6B7007CD17F /* Common.swift in Sources */,
 				10299EBA1F64B670007CD17F /* CurrentUserProfileViewController.swift in Sources */,
+				D516DC451F64C64C0038A926 /* test.swift in Sources */,
 				10299CE31F60CF37007CD17F /* ShotImage.swift in Sources */,
 				10299CD81F60CEAF007CD17F /* HomeViewController.swift in Sources */,
 				10299EB11F64B5F4007CD17F /* DetailViewController.swift in Sources */,
