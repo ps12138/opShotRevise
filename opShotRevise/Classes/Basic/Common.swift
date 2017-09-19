@@ -18,6 +18,7 @@ var ScreenWidth: CGFloat {
 }
 
 let NavBarColor = UIColor(white: 1, alpha: 0.7)
-
 let MainColor = UIColor.white
 let SecondaryColor = UIColor.red
+
+let ReceivedURLCallBackNotification = NSNotification.Name(rawValue: "kReceivedURLCallBackNotification")

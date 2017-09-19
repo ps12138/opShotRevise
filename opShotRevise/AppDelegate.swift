@@ -17,7 +17,15 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func application(_ application: UIApplication, didFinishLaunchingWithOptions launchOptions: [UIApplicationLaunchOptionsKey: Any]?) -> Bool {
         
         window = UIWindow(frame: UIScreen.main.bounds)
-        window?.rootViewController = MainTabBarController()
+        
+        if AccountManager().hasAccessToken {
+            window?.rootViewController = MainTabBarController()
+        }
+        else {
+            let vc = LoginViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            window?.rootViewController = nav
+        }
         window?.makeKeyAndVisible()
         sleep(1)
         return true
@@ -44,7 +52,11 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     func applicationWillTerminate(_ application: UIApplication) {
         // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
     }
-
-
+    
+//    func application(_ app: UIApplication, open url: URL, options: [UIApplicationOpenURLOptionsKey : Any] = [:]) -> Bool {
+//        
+//        NotificationCenter.default.post(name: ReceivedURLCallBackNotification, object: url)
+//        return true
+//    }
 }
 
