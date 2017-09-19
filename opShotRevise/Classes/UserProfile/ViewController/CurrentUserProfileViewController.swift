@@ -7,29 +7,27 @@
 //
 
 import UIKit
+import SVProgressHUD
 
 class CurrentUserProfileViewController: UIViewController {
 
+    fileprivate let accountManager = AccountManager()
+    
     override func viewDidLoad() {
         super.viewDidLoad()
-
-        // Do any additional setup after loading the view.
-    }
-
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+        self.view.backgroundColor = .white
+        let rightItem = UIBarButtonItem(title: "Logout", style: .plain, target: self, action: #selector(self.didTapLogout))
+        self.navigationItem.rightBarButtonItem = rightItem
     }
     
-
-    /*
-    // MARK: - Navigation
-
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
-    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
-        // Get the new view controller using segue.destinationViewController.
-        // Pass the selected object to the new view controller.
+    @objc func didTapLogout() {
+        SVProgressHUD.show()
+        accountManager.logout { 
+            SVProgressHUD.show(withStatus: "Success logout")
+            SVProgressHUD.dismiss(withDelay: 1)
+            let vc = LoginViewController()
+            let nav = UINavigationController(rootViewController: vc)
+            self.present(nav, animated: true, completion: nil)
+        }
     }
-    */
-
 }

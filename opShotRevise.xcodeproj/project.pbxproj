@@ -7,6 +7,12 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		101346F11F70DC1C00B3F761 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346F01F70DC1C00B3F761 /* LoginViewController.swift */; };
+		101346F31F70DD3500B3F761 /* AccountManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346F21F70DD3500B3F761 /* AccountManager.swift */; };
+		101346F51F70DDFC00B3F761 /* AFClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346F41F70DDFC00B3F761 /* AFClient.swift */; };
+		101346F71F70E0F400B3F761 /* WKViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346F61F70E0F400B3F761 /* WKViewController.swift */; };
+		101346F91F70F5A700B3F761 /* UINavgationBar+utilities.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346F81F70F5A700B3F761 /* UINavgationBar+utilities.swift */; };
+		101346FB1F70F5D900B3F761 /* UIImage+fill.swift in Sources */ = {isa = PBXBuildFile; fileRef = 101346FA1F70F5D900B3F761 /* UIImage+fill.swift */; };
 		10299C9E1F60CC6D007CD17F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 10299C9D1F60CC6D007CD17F /* AppDelegate.swift */; };
 		10299CA51F60CC6D007CD17F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 10299CA41F60CC6D007CD17F /* Assets.xcassets */; };
 		10299CA81F60CC6D007CD17F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 10299CA61F60CC6D007CD17F /* LaunchScreen.storyboard */; };
@@ -62,6 +68,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		101346F01F70DC1C00B3F761 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		101346F21F70DD3500B3F761 /* AccountManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AccountManager.swift; sourceTree = "<group>"; };
+		101346F41F70DDFC00B3F761 /* AFClient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AFClient.swift; sourceTree = "<group>"; };
+		101346F61F70E0F400B3F761 /* WKViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WKViewController.swift; sourceTree = "<group>"; };
+		101346F81F70F5A700B3F761 /* UINavgationBar+utilities.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UINavgationBar+utilities.swift"; sourceTree = "<group>"; };
+		101346FA1F70F5D900B3F761 /* UIImage+fill.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIImage+fill.swift"; sourceTree = "<group>"; };
 		10299C9A1F60CC6D007CD17F /* opShotRevise.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = opShotRevise.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		10299C9D1F60CC6D007CD17F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = AppDelegate.swift; path = ../../AppDelegate.swift; sourceTree = "<group>"; };
 		10299CA41F60CC6D007CD17F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -203,6 +215,7 @@
 		10299CCC1F60CE78007CD17F /* Auth */ = {
 			isa = PBXGroup;
 			children = (
+				101346F01F70DC1C00B3F761 /* LoginViewController.swift */,
 			);
 			path = Auth;
 			sourceTree = "<group>";
@@ -226,6 +239,7 @@
 			children = (
 				10299CED1F60D671007CD17F /* DataManagerKeys.swift */,
 				10299CE51F60CFA0007CD17F /* FeedShotsManager.swift */,
+				101346F21F70DD3500B3F761 /* AccountManager.swift */,
 			);
 			path = DataManager;
 			sourceTree = "<group>";
@@ -233,6 +247,8 @@
 		10299CCF1F60CE78007CD17F /* Extension */ = {
 			isa = PBXGroup;
 			children = (
+				101346F81F70F5A700B3F761 /* UINavgationBar+utilities.swift */,
+				101346FA1F70F5D900B3F761 /* UIImage+fill.swift */,
 			);
 			path = Extension;
 			sourceTree = "<group>";
@@ -287,6 +303,7 @@
 		10299CD51F60CE78007CD17F /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				101346F41F70DDFC00B3F761 /* AFClient.swift */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -299,6 +316,7 @@
 				10299CFB1F60DEC1007CD17F /* UIButton+utilities.swift */,
 				10299CFD1F60E118007CD17F /* String+labelSize.swift */,
 				10299D0C1F613D06007CD17F /* UIFont+predefine.swift */,
+				101346F61F70E0F400B3F761 /* WKViewController.swift */,
 			);
 			path = UIConponents;
 			sourceTree = "<group>";
@@ -603,14 +621,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				101346FB1F70F5D900B3F761 /* UIImage+fill.swift in Sources */,
 				10299D071F6131D2007CD17F /* Resuable.swift in Sources */,
 				10299CEA1F60D1C4007CD17F /* MainNavigationController.swift in Sources */,
 				10299C9E1F60CC6D007CD17F /* AppDelegate.swift in Sources */,
 				10299CFA1F60DCF8007CD17F /* BouncesContentView.swift in Sources */,
 				10299D051F6131D2007CD17F /* NibLoadable.swift in Sources */,
+				101346F31F70DD3500B3F761 /* AccountManager.swift in Sources */,
+				101346F11F70DC1C00B3F761 /* LoginViewController.swift in Sources */,
 				10299CE61F60CFA0007CD17F /* FeedShotsManager.swift in Sources */,
 				10299EBB1F64B670007CD17F /* ProfileViewController.swift in Sources */,
 				10299CFC1F60DEC1007CD17F /* UIButton+utilities.swift in Sources */,
+				101346F91F70F5A700B3F761 /* UINavgationBar+utilities.swift in Sources */,
 				10299CF81F60D904007CD17F /* TitleView.swift in Sources */,
 				10299CE81F60D194007CD17F /* MainTabBarController.swift in Sources */,
 				10299D061F6131D2007CD17F /* NibReusable.swift in Sources */,
@@ -619,6 +641,7 @@
 				D516DC451F64C64C0038A926 /* test.swift in Sources */,
 				10299CE31F60CF37007CD17F /* ShotImage.swift in Sources */,
 				10299CD81F60CEAF007CD17F /* HomeViewController.swift in Sources */,
+				101346F71F70E0F400B3F761 /* WKViewController.swift in Sources */,
 				10299EB11F64B5F4007CD17F /* DetailViewController.swift in Sources */,
 				10299CF61F60D839007CD17F /* TitleMenuViewController.swift in Sources */,
 				10299CDB1F60CEF6007CD17F /* HomeCollectionViewCell.swift in Sources */,
@@ -630,6 +653,7 @@
 				10299D0D1F613D06007CD17F /* UIFont+predefine.swift in Sources */,
 				10299CDE1F60CF0F007CD17F /* HomeCellViewModel.swift in Sources */,
 				10299D0B1F613482007CD17F /* CHTCollectionViewWaterfallLayout.swift in Sources */,
+				101346F51F70DDFC00B3F761 /* AFClient.swift in Sources */,
 				10299CE41F60CF37007CD17F /* User.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

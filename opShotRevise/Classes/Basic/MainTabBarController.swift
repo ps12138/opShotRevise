@@ -51,7 +51,7 @@ fileprivate extension Utilities {
         let menuExploreVC = TitleMenuViewController(childVC: [followedExploreVC, likedExploreVC, bucketsExploreVC])
         let exploreNav = MainNavigationController(rootViewController: menuExploreVC)
         
-        let profileVC = ProfileViewController(title: "Profile")
+        let profileVC = CurrentUserProfileViewController()
         let profileNav = MainNavigationController(rootViewController: profileVC)
         
         homeNav.tabBarItem = ESTabBarItem(
